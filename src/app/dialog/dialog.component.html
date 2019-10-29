@@ -1,0 +1,125 @@
+<div class="container">
+    <div>
+        <h4>Additional Information</h4><br>
+        <div class="row">
+            <div class="col-md-12">
+                <label class="decorateBold">Communication Preference</label>
+            </div>
+        </div>
+    </div>
+    <form>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="languageSelect">Preferred Language *</label>
+                    <select class="form-control" id="languageSelect">
+                                    <option>Select Language</option>
+                                    <option>English</option>
+                                    <option>Hindi</option>
+                                    <option>Kanada</option>                            
+                        </select>
+                </div>
+
+            </div>
+        </div>
+        <!-- Address One -->
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                    <label class="decorateBold">Location Preference</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="country">Country*</label>
+                        <select class="form-control" id="country">
+                            <option>Select Country</option>                                                            
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="timeZone">Time Zone*</label>
+                        <select class="form-control" id="timeZone">
+                            <option>Select Time Zone</option>                                                            
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- check box -->
+
+        <div class="row">
+            <div class="col-md-6">
+                <label class="decorateBold">Notification Preferences</label>
+            </div>
+            <div class="col-md-6">
+                <span class="checkedNotified">(Email or SMS mandatory)*</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" aria-labelledby="checkTwo">
+                <label class="form-check-label" for="checkTwo">Email
+                <!-- <label class="form-check-label">Email
+                    <input type="checkbox" class="form-check-input" checked="checked">
+                    <span class="checkmark"></span> -->
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" aria-labelledby="checkThree">
+                <label class="form-check-label" for="checkThree">SMS</label>
+            </div>
+        </div>
+        <!-- Phone number with Country code and flag -->
+        <div class="row">
+
+        </div>
+        <div class="row">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" aria-labelledby="checkFour">
+                <label class="form-check-label" for="checkFour">Push Notification</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label class="decorateBold">Subscription</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" aria-checked="true" aria-labelledby="checkOne">
+                <label class="form-check-label" for="checkOne">Send me Communication about AHA training</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label class="decorateBold">Terms and Conditions</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-check TermAndCondition">
+                <input class="form-check-input" type="checkbox" aria-labelledby="checkFive">
+                <label class="form-check-label" for="checkFive">I have read and understand the <a href="#">Terms and Conditions</a></label>
+            </div>
+
+        </div><br>
+        <div class="row d-flex justify-content-center align-items-center logoutContainer">
+            <div class="col-md-6 pt-4 pb-4 d-flex justify-content-center">
+                <button class="logoutBtn" (click)="logOut()">Cancel And Logout</button>
+            </div>
+            <div class="col-md-6 pt-2 pb-2 pl-3 pr-3 d-flex justify-content-center">
+                <button class=" btn btn-default submitBtn" (click)="submit()" disabled="isDisabled">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
